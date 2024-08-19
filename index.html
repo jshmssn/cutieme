@@ -42,7 +42,6 @@
             margin-right: 1em;
             z-index: 55;
             margin-top: 2em;
-            opacity: ;
         }
 
         .group1 button {
@@ -123,7 +122,7 @@
             width: 50px;
             position: absolute;
             top: 12em;
-            left: 4em;
+            left: 36rem;
             animation: bounce2 2s ease infinite;
             opacity: 0;
         }
@@ -190,6 +189,52 @@
             justify-content: center;
             align-items: center;
         }
+        /* Media queries for devices with a max width of 768px */
+        @media (max-width: 768px) {
+            .group1 {
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+            }
+
+            .images1 {
+                grid-template-columns: 1fr;
+                gap: 1em;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+
+            .ask {
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                margin-top: 1em;
+            }
+
+            .btn {
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            #btn1, #btn2 {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            .crush {
+                font-size: 20px;
+                margin-bottom: 1em;
+            }
+
+            .images1 img {
+                width: 100px;
+            }
+
+            #hands {
+                width: 30px;
+                top: 20em;
+                left: 8em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -212,7 +257,7 @@
             <img class="sadcat" id="sadcat" src="media/sadcat.jpeg" alt="">
             <img class="crying" id="crying" src="media/sad-guy-crying-guy.gif" alt="">
             <img class="sadboi" id="sadboi" src="media/sadboi.jpeg" alt="">
-            <img id="sadsad" src="media/sadsad.jpeg" alt="">
+            <img id="sadsad" src="media/sadsad.gif" alt="">
         </div>
     </div>
 
@@ -223,7 +268,7 @@
         </p>
         <div class="btn">
             <a href="page/yes.html"><button id="btn1">Sure!</button></a>
-            <button id="btn2">No</button>
+            <a id="btn2">No</a>
         </div>
         <img id="hands" src="media/hands.png" alt="">
     </div>
@@ -251,10 +296,6 @@
                 <img id="hang" src="media/hang.jpeg" alt="">
                 <img id="frog" src="media/frog.jpeg" alt="">
             </div>
-        </div>
-
-        <div class="fff">
-            <p>Joshua Mission via GitHub</p>
         </div>
     </div>
 
