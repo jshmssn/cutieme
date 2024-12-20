@@ -1,304 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My lovee</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="proposal.css">
+	<meta charset="UTF-8">
+	<title>For Luvv</title>
 
-        body {
-            background: white;
-            font-family: Poppins;
-        }
-
-        .g1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .images1 img {
-            width: 150px;
-        }
-
-        .images1 {
-            position: absolute;
-            top: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2em;
-            margin-left: 1em;
-            margin-right: 1em;
-        }
-
-        .group1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2em;
-            margin-left: 1em;
-            margin-right: 1em;
-            z-index: 55;
-            margin-top: 2em;
-        }
-
-        .group1 button {
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-weight: bold;
-            font-family: Poppins;
-            z-index: 4444;
-            border: 2px solid red;
-        }
-
-        .group1 button:hover {
-            background: white;
-            border: 2px solid black;
-        }
-
-        .ask {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border-radius: 5px;
-            z-index: 5555555;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            text-align: center;
-            margin-top: em;
-            position: relative;
-        }
-
-        .btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2em;
-        }
-
-        #btn1 {
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-weight: bold;
-            font-family: Poppins;
-            border: 2px solid black;
-        }
-
-        #btn1:hover {
-            background: white;
-            border: 2px solid black;
-        }
-
-        #btn2 {
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-weight: bold;
-            font-family: Poppins;
-            border: 2px solid red;
-        }
-
-        #btn2:hover {
-            background: white;
-            border: 2px solid black;
-        }
-
-        .crush {
-            font-size: 25px;
-            margin-bottom: 2em;
-            font-weight: bold;
-            color: red;
-        }
-
-        #hands {
-            width: 50px;
-            position: absolute;
-            top: 12em;
-            left: 36rem;
-            animation: bounce2 2s ease infinite;
-            opacity: 0;
-        }
-
-        #sadman {
-            transform: translateY(-2em);
-            opacity: 0;
-        }
-
-        #hang {
-            transform: translateY(-4em);
-            opacity: 0;
-        }
-
-        #frog {
-            transform: translateY(-4em);
-            opacity: 0;
-        }
-
-        #hahahuhu {
-            opacity: 0;
-        }
-
-        #sadcat {
-            opacity: 0;
-        }
-
-        #sadboi {
-            opacity: 0;
-        }
-
-        #crying {
-            opacity: 0;
-        }
-
-        #sadsad {
-            opacity: 0;
-        }
-
-        @keyframes bounce2 {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-20px);
-            }
-            60% {
-                transform: translateY(-15px);
-            }
-        }
-
-        /*BUTTONS OPACITY*/
-        #btt1, #btt2, #btt3, #btt4, #btt5, #btt6, #btt7, #btt8, #btt9, #btt10, #btt11, #btt12 {
-            opacity: 0;
-        }
-
-        /*BUTTONS2 OPACITY*/
-        #bbtt1, #bbtt2, #bbtt3, #bbtt4, #bbtt5, #bbtt6, #bbtt7, #bbtt8, #bbtt9, #bbtt10, #bbtt11, #bbtt12 {
-            opacity: 0;
-        }
-
-        .fff {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* Media queries for devices with a max width of 768px */
-        @media (max-width: 768px) {
-            .group1 {
-                grid-template-columns: 1fr 1fr;
-                gap: 1em;
-            }
-
-            .images1 {
-                grid-template-columns: 1fr;
-                gap: 1em;
-                margin-left: 0.5em;
-                margin-right: 0.5em;
-            }
-
-            .ask {
-                padding-top: 0.5em;
-                padding-bottom: 0.5em;
-                margin-top: 1em;
-            }
-
-            .btn {
-                flex-direction: column;
-                gap: 1em;
-            }
-
-            #btn1, #btn2 {
-                width: 100%;
-                padding: 10px;
-                font-size: 16px;
-            }
-
-            .crush {
-                font-size: 20px;
-                margin-bottom: 1em;
-            }
-
-            .images1 img {
-                width: 100px;
-            }
-
-            #hands {
-                width: 30px;
-                top: 20em;
-                left: 8em;
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <div class="g1">
-        <div class="group1">
-            <button id="btt1">NO</button>
-            <button id="btt2">NO</button>
-            <button id="btt3">NO</button>
-            <button id="btt4">NO</button>
-            <button id="btt5">NO</button>
-            <button id="btt6">NO</button>
-            <button id="btt7">NO</button>
-            <button id="btt8">NO</button>
-            <button id="btt9">NO</button>
-            <button id="btt10">NO</button>
-            <button id="btt11">NO</button>
-            <button id="btt12">NO</button>
-        </div>
-        <div class="images1">
-            <img class="sadcat" id="sadcat" src="media/sadcat.jpeg" alt="">
-            <img class="crying" id="crying" src="media/sad-guy-crying-guy.gif" alt="">
-            <img class="sadboi" id="sadboi" src="media/sadboi.jpeg" alt="">
-            <img id="sadsad" src="media/sadsad.gif" alt="">
-        </div>
-    </div>
+	<div class="g1">
+		<div class="group1">
+			<button id="btt1">No</button>
+			<button id="btt2">No</button>
+			<button id="btt3">No</button>
+			<button id="btt4">No</button>
+			<button id="btt5">No</button>
+			<button id="btt6">No</button>
+			<button id="btt7">No</button>
+			<button id="btt8">No</button>
+			<button id="btt9">No</button>
+			<button id="btt10">No</button>
+			<button id="btt11">No</button>
+			<button id="btt12">No</button>
 
-    <div class="ask">
-        <p>
-            <span class="crush">HI CRUSHH</span> <br>
-            Hey, I've really enjoyed our chats and kahit na minsan ang kulit ko at nakaka-goosebumps yung mga sinasabi ko. Would you be interested in going on a virtual date sometime? I think it could be a fun way to get to know each other better. Let me know what you think!
-        </p>
-        <div class="btn">
-            <a href="page/yes.html"><button id="btn1">Sure!</button></a>
-            <a id="btn2">No</a>
-        </div>
-        <img id="hands" src="media/hands.png" alt="">
-    </div>
+		</div>
+		<div class="images1">
+			<audio id="meowmeow" src="meowmeow.mp3" preload="auto" hidden></audio>
+			<img loop class="sadcat" id="sadcat" src="https://media1.tenor.com/m/oz8JLoVM2W0AAAAd/ponke-ponkesol.gif"
+				alt=""> </img>
+			<img class="crying" id="crying" src="https://c.tenor.com/36JFV8pDtXIAAAAd/sad-your-friends-are-togheter.gif"
+				alt="">
 
-    <div class="g1">
-        <div class="images2">
-            <div class="group1">
-                <button id="bbtt1">NO</button>
-                <button id="bbtt2">NO</button>
-                <button id="bbtt3">NO</button>
-                <button id="bbtt4">NO</button>
-                <button id="bbtt5">NO</button>
-                <button id="bbtt6">NO</button>
-                <button id="bbtt7">NO</button>
-                <button id="bbtt8">NO</button>
-                <button id="bbtt9">NO</button>
-                <button id="bbtt10">NO</button>
-                <button id="bbtt11">NO</button>
-                <button id="bbtt12">NO</button>
-            </div>
+			<img class="sadboi" id="sadboi"
+				src="https://c.tenor.com/6CujUsC1CIkAAAAM/crying-black-guy-meme50fps-interpolated-interpolated.gif"
+				alt="">
+			<img id="sadsad" src="sadsad.jpeg" alt="">
+		</div>
 
-            <div class="images1">
-                <img class="sadman" id="sadman" src="media/sadman.jpeg" alt="">
-                <img class="hahahuhu" id="hahahuhu" src="media/sad-man-tik-tok-meme.gif" alt="">
-                <img id="hang" src="media/hang.jpeg" alt="">
-                <img id="frog" src="media/frog.jpeg" alt="">
-            </div>
-        </div>
-    </div>
 
-    <script src="js/proposalv2.js"></script>
+		<div class="ask">
+
+			<p> <span class="crush">HI LUVV</span> <br>
+				Do you think I'm cute?🤣😳</p>
+			<div class="btn">
+				<a href="yes.html"><button id="btn1">Yes</button> </a> <button id="btn2">No</button>
+			</div>
+			<img id="hands" src="image-removebg-preview.png " alt="">
+		</div>
+
+		<div class="g1">
+			<div class="images2">
+				<div class="group1">
+					<button id="bbtt1">No</button>
+					<button id="bbtt2">No</button>
+					<button id="bbtt3">No</button>
+					<button id="bbtt4">No</button>
+					<button id="bbtt5">No</button>
+					<button id="bbtt6">No</button>
+					<button id="bbtt7">No</button>
+					<button id="bbtt8">No</button>
+					<button id="bbtt9">No</button>
+					<button id="bbtt10">No</button>
+					<button id="bbtt11">NO</button>
+					<button id="bbtt12">No</button>
+				</div>
+
+				<div class="images1">
+
+					<img class="sadman" id="sadman" src="sadman.jpeg" alt="">
+
+					<img class="hahahuhu" id="hahahuhu"
+						src="https://c.tenor.com/dpUQLSpLPzkAAAAd/sad-man-tik-tok-meme.gif" alt="">
+
+					<img id="hang" src="hang.jpeg" alt="">
+
+					<img id="frog" src="cryingcat.jpeg" alt="">
+
+				</div>
+			</div>
+
+			<div class="fff">
+				<p>For Shiena✨</p>
+			</div>
+			<div class="fff" style="margin-top: -20px;">
+				<small>by Dumdum Star✨</small>
+			</div>
+
+			<script src="proposalv2.js"></script>
+			<script>
+				document.getElementById("bbtt3").addEventListener("click", function () {
+					var meow = document.getElementById("meowmeow");
+					meow.play().catch(function (error) {
+						// console.error("Error attempting to play audio: ", error);
+					});
+				});
+			</script>
+
 </body>
+
 </html>
